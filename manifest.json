@@ -1,13 +1,11 @@
 {
     "manifest_version": 2,
-    "name": "WebWork Green in PrairieLearn",
+    "name": "WebWork Green in PrairieLearn (CSS Only)",
     "version": "0.1",
     "content_scripts": [
         {
-            "matches": [
-                "https://ca.prairielearn.org/pl/course_instance/*"
-            ],
-            "js": ["content.js"]
+            "matches": ["https://*.prairielearn.org/pl/course_instance/*"],
+            "css": ["style.css"]
         }
       ],
     "icons": {
