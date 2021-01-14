@@ -5,7 +5,7 @@
 }
 
 .progress.bg .progress-bar.bg-success {
-	background-color: #88FF88 !Important;
+	background-color: #88FF88 !important;
     color: transparent;
     font-size: 0;
 }
