@@ -1,7 +1,6 @@
 .progress.bg .progress-bar.bg-success::before {
     content: "\2605Perfect\2605";
     color: #000;
-    font-size: inherit;
     font-size: 12px;
 }
 
