@@ -1,16 +1,35 @@
 {
-    "manifest_version": 2,
-    "name": "WebWork Green in PrairieLearn (CSS Only)",
-    "version": "0.1",
-    "content_scripts": [
-        {
-            "matches": ["https://*.prairielearn.org/pl/course_instance/*"],
-            "css": ["style.css"]
-        }
-      ],
-    "icons": {
-      "16": "icon16.png",
-      "48": "icon48.png",
-      "128": "icon128.png"
+  "manifest_version": 2,
+  "name": "WebWork Green in PrairieLearn",
+  "description": "CSS only version",
+  "version": "1.0",
+
+  "permissions": ["declarativeContent", "storage"],
+
+  "icons": {
+    "16": "icon16.png",
+    "48": "icon48.png",
+    "128": "icon128.png"
+  },
+
+  "web_accessible_resources": [
+    "files/otherElements.css"
+  ],
+
+  "content_scripts": [
+    {
+      "matches": ["https://*.prairielearn.org/pl/course_instance/*"],
+      "run_at": "document_start",
+      "js": ["files/script.js"],
+      "css": ["files/progressBars.css"]
     }
+  ],
+
+  "options_ui": {
+    "page": "options/options.html"
+  },
+
+  "browser_action": {
+    "default_popup": "options/popup.html"
+  }
 }

@@ -1,0 +1,12 @@
+.badge-success {
+    color: #000 !important;
+}
+
+.badge-success {
+    background-color: #88FF88 !important;
+}
+
+.file-status-container-left svg[style="color: #4CAF50;"],
+span[style="color: #4CAF50"] {
+    color: #88FF88 !important;
+}
