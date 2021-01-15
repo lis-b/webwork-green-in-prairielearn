@@ -2,9 +2,9 @@
   "manifest_version": 2,
   "name": "WebWork Green in PrairieLearn",
   "description": "CSS version",
-  "version": "0.9",
+  "version": "1.0",
 
-  "permissions": ["declarativeContent", "storage"],
+  "permissions": ["storage"],
 
   "icons": {
     "16": "icon16.png",

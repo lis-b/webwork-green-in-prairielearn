@@ -1,9 +1,72 @@
 <!DOCTYPE html>
 <html>
+
 <style>
 
-</style>
-<body>
+* {
+    box-sizing: border-box;
+}
 
+::selection {
+    background: transparent;
+    color: inherit;
+}
+
+body {
+    width: 100%;
+    text-align: center;
+    margin: 0;
+    padding-bottom: 5px;
+    cursor: default;
+    padding-top: 10px;
+}
+
+h1 {
+    font-size: 17px;
+    background: #88FF88;
+    margin: 0 0 15px 0;
+    padding: 5px 0;
+}
+
+span {
+    display: block;
+    font-size: 15px;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input {
+    display: none;
+}
+
+label {
+    display: block;
+    width: 100%;
+    padding: 5px;
+    cursor: pointer;
+}
+
+input:checked + label {
+    cursor: default;
+    font-weight: bold;
+    background: #88FF88;
+}
+
+small {
+    display: block;
+    margin-top: 15px;
+}
+
+</style>
+
+<body>
+    <span>Enable for</span>
+    <input type="radio" name="enable" value="all" id="all" />
+        <label for="all">everything</label>
+    <input type="radio" name="enable" value="progressBars" id="progressBars" />
+        <label for="progressBars">only progress bars</label>
+    <script src="options.js"></script>
+
+    <small><b>Note:</b> Refresh the page for changes to take effect!</small>
 </body>
 </html>
