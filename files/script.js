@@ -1,4 +1,4 @@
-chrome.storage.sync.get({"all": true},
+chrome.storage.sync.get({"all": false},
     function(x) {
         if (x.all) {
             var link = document.createElement("link");
