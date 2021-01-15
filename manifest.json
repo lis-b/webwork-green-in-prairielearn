@@ -1,8 +1,8 @@
 {
   "manifest_version": 2,
   "name": "WebWork Green in PrairieLearn",
-  "description": "CSS only version",
-  "version": "1.0",
+  "description": "CSS version",
+  "version": "0.9",
 
   "permissions": ["declarativeContent", "storage"],
 
