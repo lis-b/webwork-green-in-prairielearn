@@ -1,11 +1,15 @@
-.progress.bg .progress-bar.bg-success::before {
+.progress.bg .progress-bar.bg-success[style="width: 100%"]::before {
     content: "\2605Perfect\2605";
     color: #000;
     font-size: 12px;
 }
 
-.progress.bg .progress-bar.bg-success {
-	background-color: #88FF88 !important;
+.progress.bg .progress-bar.bg-success[style="width: 100%"] {
     color: transparent;
     font-size: 0;
+}
+
+.progress.bg .progress-bar.bg-success {
+	background-color: #88FF88 !important;
+    color: #000;
 }
