@@ -5,6 +5,6 @@ chrome.storage.sync.get({"all": false},
             link.setAttribute("rel", "stylesheet");
             link.setAttribute("type", "text/css");
             link.setAttribute("href", chrome.runtime.getURL("files/otherElements.css"));
-            document.documentElement.appendChild(link);
+            document.documentElement.insertBefore(link, document.documentElement.childNodes[0]);
         }
     })
